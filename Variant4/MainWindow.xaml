@@ -1,0 +1,15 @@
+﻿<Window x:Class="Variant4.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:Variant4"
+		mc:Ignorable="d"
+		Title="Даты" Width="480" Height="360" MinWidth="480" MinHeight="360">
+	<StackPanel Margin="5">
+        <Label Content="Выбранная дата" Margin="5,0"/>
+        <TextBox Name="dateSelected" IsReadOnly="True" Margin="5"/>
+        <DatePicker Name="datePicker" SelectedDate="2011.11.11" SelectedDateChanged="DatePicker_SelectedDateChanged" Margin="5"/>
+        <Calendar Name="calendar" DisplayMode="Decade" SelectionMode="SingleRange" SelectedDatesChanged="Calendar_SelectedDatesChanged"  Margin="5"/>
+	</StackPanel>
+</Window>
